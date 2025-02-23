@@ -373,21 +373,3 @@ footer {
     opacity: 1;
   }
 }
-
-/* Apply to each letter */
-.slide-text {
-  display: inline-block;
-  animation: slideIn 0.5s ease forwards;
-  opacity: 0;
-}
-
-/* Staggered animation for each letter */
-.slide-text:nth-child(1) { animation-delay: 0.2s; }
-.slide-text:nth-child(2) { animation-delay: 0.4s; }
-.slide-text:nth-child(3) { animation-delay: 0.6s; }
-.slide-text:nth-child(4) { animation-delay: 0.8s; }
-.slide-text:nth-child(5) { animation-delay: 1s; }
-.slide-text:nth-child(6) { animation-delay: 1.2s; }
-.slide-text:nth-child(7) { animation-delay: 1.4s; }
-.slide-text:nth-child(8) { animation-delay: 1.6s; }
-.slide-text:nth-child(9) { animation-delay: 1.8s; }
