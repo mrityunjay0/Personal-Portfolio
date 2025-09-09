@@ -373,3 +373,20 @@ footer {
     opacity: 1;
   }
 }
+
+.project__card {
+  text-align: center; /* centers caption under image */
+  margin: 10px;
+}
+
+.project__card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.caption {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #948f8f;
+}
