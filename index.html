@@ -1,287 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Personal Portfolio Page</title>
-  </head>
-  <body>
-    <nav>
-      <div class="nav__logo">
-        <a href="assets/coffee.jpeg" target="_blank"
-          ><span>₹ </span>Sponsor a <span>Commit</span>☕️</a
-        >
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Favicons -->
+  <link rel="icon" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+
+  <title>Mrityunjay | Java / Spring Boot Developer</title>
+  <meta
+    name="description"
+    content="Mrityunjay's portfolio - Java, Spring Boot projects, web apps, and problem solving."
+  />
+</head>
+
+<body>
+  <!-- NAV -->
+  <nav>
+    <div class="nav__logo">
+      <a href="assets/coffee.jpeg" target="_blank">
+        <span>₹ </span>Sponsor a <span>Commit</span>☕️
+      </a>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <header>
+    <div class="section__container header__container">
+      <p><span>Hello</span> I'm</p>
+      <h1>Mrityunjay</h1>
+      <h2 class="section__title">A driven tech <span>grad</span>.</h2>
+      <p>
+        Welcome to my portfolio! I’m
+        <a style="color: var(--secondary-color)">Mrityunjay</a>. A passionate
+        coder and aspiring engineer with a knack for building beautiful and
+        user-friendly websites. With experience in various web projects. I
+        bring both creativity and technical expertise to the table. I’ve also
+        solved over 500 problems on CodeChef and LeetCode combined, constantly
+        honing my problem-solving skills. Let’s build something amazing
+        together!
+      </p>
+      <div class="action__btns">
+        <a href="https://github.com/mrityunjay0" target="_blank">
+          <button class="btn">Github</button>
+        </a>
       </div>
-    </nav>
-    <header>
-      <div class="section__container header__container">
-        <p><span>Hello</span> I'm</p>
-        <h1>Mrityunjay</h1>
-        <h2 class="section__title">A driven tech <span>grad</span>.</h2>
-        <p>
-          Welcome to my portfolio! I’m
-          <a style="color: var(--secondary-color)">Mrityunjay</a>. A passionate
-          coder and aspiring engineer with a knack for building beautiful and
-          user-friendly websites. With experience in various web projects. I
-          bring both creativity and technical expertise to the table. I’ve also
-          solved over 500 problems on CodeChef and LeetCode combined, constantly
-          honing my problem-solving skills. Let’s build something amazing
-          together!
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section class="about">
+    <div class="section__container about__container">
+      <div class="about__image">
+        <img src="assets/aboutbg.jpg" alt="about" />
+      </div>
+      <div class="about__content">
+        <h2 class="section__title">About <span>Me</span></h2>
+        <p class="section__subtitle">Software Engineer!</p>
+        <p class="about__details">
+          I am an enthusiastic and driven Software Engineering graduate
+          specializing in Artificial Intelligence and Machine Learning.
+          Passionate about software development, I thrive on solving complex
+          problems and building scalable solutions. With a strong foundation
+          in programming languages like C, C++, and Java, alongside
+          proficiency in web technologies and databases, I continuously
+          enhance my technical expertise.
         </p>
-        <div class="action__btns">
-          <a href="https://github.com/mrityunjay0" target="_blank"
-            ><button class="btn">Github</button></a
-          >
-          <!-- <a href="#" class="video">
-            <div class="play">
-              <i class="ri-play-fill"></i>
-            </div>
-            <span>Watch My Video</span>
-          </a> -->
-        </div>
+        <a
+          href="https://drive.google.com/file/d/11P91jOTlFrkJ56a3MLOwX8sPdAooH6QQ/view?usp=sharing"
+          target="_blank"
+        >
+          <button class="btn">Resume</button>
+        </a>
       </div>
-    </header>
-    <section class="about">
-      <div class="section__container about__container">
-        <div class="about__image">
-          <img src="assets/aboutbg.jpg" alt="about" />
-        </div>
-        <div class="about__content">
-          <h2 class="section__title">About <span>Me</span></h2>
-          <p class="section__subtitle">Software Engineer!</p>
-          <p class="about__details">
-            I am an enthusiastic and driven Software Engineering graduate
-            specializing in Artificial Intelligence and Machine Learning.
-            Passionate about software development, I thrive on solving complex
-            problems and building scalable solutions. With a strong foundation
-            in programming languages like C, C++, and Java, alongside
-            proficiency in web technologies and databases, I continuously
-            enhance my technical expertise.
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="service">
+    <div class="section__container service__container">
+      <p class="section__subtitle">What I Offer!</p>
+      <h2 class="section__title"><span>My</span> Skills</h2>
+      <div class="service__grid">
+        <div class="service__card">
+          <i class="ri-code-s-slash-line"></i>
+          <h4>Programming Languages</h4>
+          <p>
+            C, C++, Java, Python,<br />
+            HTML, CSS, Java Script
           </p>
-          <a
-            href="https://drive.google.com/file/d/11P91jOTlFrkJ56a3MLOwX8sPdAooH6QQ/view?usp=sharing"
-            target="_blank"
-            ><button class="btn">Resume</button></a
-          >
+        </div>
+
+        <div class="service__card">
+          <i class="ri-cloud-fill"></i>
+          <h4>Cloud Technologies</h4>
+          <p>AWS</p>
+        </div>
+
+        <div class="service__card">
+          <i class="ri-layout-masonry-line"></i>
+          <h4>Frameworks</h4>
+          <p>Spring Boot</p>
+        </div>
+
+        <div class="service__card">
+          <i class="ri-database-2-line"></i>
+          <h4>Databases</h4>
+          <p>
+            SQL <br />
+            MySQL
+          </p>
+        </div>
+
+        <div class="service__card">
+          <i class="ri-git-branch-line"></i>
+          <h4>Version Control</h4>
+          <p>
+            Git <br />
+            GitHub
+          </p>
+        </div>
+
+        <div class="service__card">
+          <i class="ri-clipboard-line"></i>
+          <h4>Coursework & Soft Skills</h4>
+          <p>
+            DBMS, OOP, DSA <br />
+            Problem Solving, Adaptability, Time Management
+          </p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="service">
-      <div class="section__container service__container">
-        <p class="section__subtitle">What I Offer!</p>
-        <h2 class="section__title"><span>My</span> Skills</h2>
-        <div class="service__grid">
-          <div class="service__card">
-            <i class="ri-code-s-slash-line"></i>
-            <h4>Programming Languages</h4>
-            <p>
-              C, C++, Java, Python,<br />
-              HTML, CSS, Java Script
-            </p>
-            <!-- <a href="#" class="read__more">Read more...</a> -->
-          </div>
-          <div class="service__card">
-            <i class="ri-cloud-fill"></i>
-            <h4>Cloud Technologies</h4>
-            <p>AWS</p>
-            <!-- <a href="#" class="read__more">Read more...</a> -->
-          </div>
-          <div class="service__card">
-            <i class="ri-layout-masonry-line"></i>
-            <h4>Frameworks</h4>
-            <p>Spring Boot</p>
-            <!-- <a href="#" class="read__more">Read more...</a> -->
-          </div>
-          <div class="service__card">
-            <i class="ri-database-2-line"></i>
-            <h4>Databases</h4>
-            <p>
-              SQL <br />
-              MySQL
-            </p>
-            <!-- <a href="#" class="read__more">Read more...</a> -->
-          </div>
-          <div class="service__card">
-            <i class="ri-git-branch-line"></i>
-            <h4>Version Control</h4>
-            <p>
-              Git <br />
-              GitHub
-            </p>
-            <!-- <a href="#" class="read__more">Read more...</a> -->
-          </div>
-          <div class="service__card">
-            <i class="ri-clipboard-line"></i>
-            <h4>Coursework & Soft Skills</h4>
-            <p>
-              DBMS, OOP, DSA <br />
-              Problem Solving, Adaptability, Time Management
-            </p>
-            <!-- <a href="#" class="read__more">Read more...</a> -->
-          </div>
-        </div>
-      </div>
-    </section>
+  <!-- PROJECTS -->
+  <section class="project">
+    <div class="section__container project__container">
+      <p class="section__subtitle">Portfolio</p>
+      <h2 class="section__title"><span>Latest</span> Projects</h2>
 
-    <section class="project">
+      <!-- WRAP (Buttons + Marquee) -->
+      <div class="project__marqueeWrap" id="projectWrap">
+        <button class="marqueeBtn marqueeBtn--left" id="marqueePrev" aria-label="Previous">
+          &#10094;
+        </button>
 
-      <div class="section__container project__container">
-        <p class="section__subtitle">Portfolio</p>
-        <h2 class="section__title"><span>Latest</span> Projects</h2>
+        <div class="project__marquee" id="projectMarquee">
+          <div class="project__track" id="projectTrack">
+            <!-- ONE SET of cards (we will duplicate in JS) -->
 
-        <div class="project__grid">
-
-          <div class="project__card">
-            <a href="https://github.com/mrityunjay0/eCommerce" target="_blank">
+            <a class="project__bannerCard" href="https://github.com/mrityunjay0/eCommerce" target="_blank">
               <img src="assets/eCommerce.jpeg" alt="E-Commerce Project" />
-              <p class="caption">E-Commerce</p>
+              <div class="project__bannerText">
+                <h3>E-Commerce</h3>
+                <p>Spring Boot • Security • MySQL • Admin Panel</p>
+              </div>
             </a>
-          </div>
 
-          <div class="project__card">
-            <a href="https://github.com/mrityunjay0/JarvisAI" target="_blank">
+            <a class="project__bannerCard" href="https://github.com/mrityunjay0/JarvisAI" target="_blank">
               <img src="assets/jarvis.jpg" alt="Jarvis AI Project" />
-              <p class="caption">Jarvis AI</p>
+              <div class="project__bannerText">
+                <h3>Jarvis AI</h3>
+                <p>AI Assistant • Automation • Voice</p>
+              </div>
             </a>
-          </div>
 
-          <div class="project__card">
-            <a
-              href="https://github.com/mrityunjay0/Plant-Diseases-Detection"
-              target="_blank"
-            >
+            <a class="project__bannerCard" href="https://github.com/mrityunjay0/Plant-Diseases-Detection" target="_blank">
               <img src="assets/pdis.jpg" alt="Plant Diseases Detection" />
-              <p class="caption">Plant Diseases Detection</p>
+              <div class="project__bannerText">
+                <h3>Plant Diseases Detection</h3>
+                <p>ML • Image Classification</p>
+              </div>
             </a>
-          </div>
 
-          <div class="project__card">
-            <a href="https://mrityunjay0.github.io/TTS/" target="_blank">
+            <a class="project__bannerCard" href="https://mrityunjay0.github.io/TTS/" target="_blank">
               <img src="assets/tts.jpeg" alt="Text-to-Speech App" />
-              <p class="caption">Text-to-Speech</p>
+              <div class="project__bannerText">
+                <h3>Text-to-Speech</h3>
+                <p>JavaScript • Web Speech API</p>
+              </div>
             </a>
-          </div>
 
-          <div class="project__card">
-            <a
-              href="https://github.com/mrityunjay0/Real-Time-Chat-Application"
-              target="_blank"
-            >
+            <a class="project__bannerCard" href="https://github.com/mrityunjay0/Real-Time-Chat-Application" target="_blank">
               <img src="assets/chat.png" alt="Just Chat" />
-              <p class="caption">Just Chat</p>
+              <div class="project__bannerText">
+                <h3>Just Chat</h3>
+                <p>Real-time • WebSockets</p>
+              </div>
             </a>
-          </div>
 
-          <div class="project__card">
-            <a
-              href="https://github.com/mrityunjay0/financial-document-analyzer"
-              target="_blank"
-            >
+            <a class="project__bannerCard" href="https://github.com/mrityunjay0/financial-document-analyzer" target="_blank">
               <img src="assets/fda.jpeg" alt="Financial Data Analyser" />
-              <p class="caption">Financial Data Analyser</p>
+              <div class="project__bannerText">
+                <h3>Financial Document Analyzer</h3>
+                <p>NLP • Parsing • Analysis</p>
+              </div>
             </a>
-          </div>
 
-          <div class="project__card">
-            <a
-              href="https://github.com/mrityunjay0/Product-Management-System"
-              target="_blank"
-            >
+            <a class="project__bannerCard" href="https://github.com/mrityunjay0/Product-Management-System" target="_blank">
               <img src="assets/pms.jpeg" alt="Category Product Management" />
-              <p class="caption">Category Product Management</p>
+              <div class="project__bannerText">
+                <h3>Product Management System</h3>
+                <p>CRUD • Spring Boot</p>
+              </div>
             </a>
-          </div>
 
-          <div class="project__card">
-            <a href="https://mrityunjay0.github.io/2048/" target="_blank">
+            <a class="project__bannerCard" href="https://mrityunjay0.github.io/2048/" target="_blank">
               <img src="assets/2048.jpg" alt="2048 Game" />
-              <p class="caption">2048 Game</p>
+              <div class="project__bannerText">
+                <h3>2048 Game</h3>
+                <p>JavaScript • Game Logic</p>
+              </div>
             </a>
-          </div>
 
-          <div class="project__card">
-            <a href="https://github.com/mrityunjay0/COURT-ROOM" target="_blank">
+            <a class="project__bannerCard" href="https://github.com/mrityunjay0/COURT-ROOM" target="_blank">
               <img src="assets/courtRoom.jpeg" alt="Court Room" />
-              <p class="caption">Court Room</p>
+              <div class="project__bannerText">
+                <h3>Court Room</h3>
+                <p>Project • Simulation</p>
+              </div>
             </a>
-          </div>
 
-          <div class="project__card">
-            <a href="https://linktr.ee/mrityunjay_k" target="_blank">
+            <a class="project__bannerCard" href="https://linktr.ee/mrityunjay_k" target="_blank">
               <img src="assets/port.jpg" alt="Portfolio" />
-              <p class="caption">Portfolio</p>
+              <div class="project__bannerText">
+                <h3>Portfolio</h3>
+                <p>Personal Branding • UI</p>
+              </div>
             </a>
-          </div>
-          
-        </div>
-      </div>
 
-    </section>
-
-    <footer>
-      <div class="section__container footer__container">
-        <img src="assets/aboutbg.jpg" alt="contact me" />
-        <div class="footer__content">
-          <p class="section__subtitle">Got an idea?</p>
-          <h2 class="section__title">Get in <span>Touch!</span></h2>
-
-          <!-- <div class="footer__details">
-            <p>
-              Passion for technology just getting started. Open to collaborate, code, and create.
-            </p>
-            <p style="font-family: monospace;" align="right">-𝓜𝓻𝓲𝓽𝔂𝓾𝓷𝓳𝓪𝔂</p>
-          </div> -->
-
-          <div class="social__icons">
-            <a href="tel:+917368060255" class="icon" target="_blank"
-              ><i class="ri-phone-fill"></i
-            ></a>
-            <a
-              href="mailto:mrityunjaykmr.mk@gmail.com"
-              class="icon"
-              target="_blank"
-              ><i class="ri-mail-line"></i
-            ></a>
-            <a
-              href="https://www.instagram.com/__.lost_somewhere_._/"
-              class="icon"
-              target="_blank"
-              ><i class="ri-instagram-fill"></i
-            ></a>
-            <a
-              href="https://www.linkedin.com/in/mrityunjay-kumar-7340062a1/"
-              class="icon"
-              target="_blank"
-              ><i class="ri-linkedin-fill"></i
-            ></a>
-          </div>
-
-          <div class="footer__details">
-            <p>
-              Passion for technology just getting started. Open to collaborate,
-              code, and create.
-            </p>
-            <p style="font-family: monospace; color: white" align="right">
-              -𝓜𝓻𝓲𝓽𝔂𝓾𝓷𝓳𝓪𝔂
-            </p>
           </div>
         </div>
 
-        <!-- <form class="footer__form">
-          <input type="text" placeholder="Your Name" />
-          <input type="text" placeholder="Your Email Address" />
-          <input type="text" placeholder="Your Phone Number" />
-          <textarea cols="30" rows="10" placeholder="Your Idea"></textarea>
-          <button type="submit" class="btn">Send Message</button>
-        </form> -->
+        <button class="marqueeBtn marqueeBtn--right" id="marqueeNext" aria-label="Next">
+          &#10095;
+        </button>
       </div>
-    </footer>
-  </body>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="section__container footer__container">
+      <img src="assets/aboutbg.jpg" alt="contact me" />
+      <div class="footer__content">
+        <p class="section__subtitle">Got an idea?</p>
+        <h2 class="section__title">Get in <span>Touch!</span></h2>
+
+        <div class="social__icons">
+          <a href="tel:+917368060255" class="icon" target="_blank"><i class="ri-phone-fill"></i></a>
+          <a href="mailto:mrityunjaykmr.mk@gmail.com" class="icon" target="_blank"><i class="ri-mail-line"></i></a>
+          <a href="https://www.instagram.com/__.lost_somewhere_._/" class="icon" target="_blank"><i class="ri-instagram-fill"></i></a>
+          <a href="https://www.linkedin.com/in/mrityunjay-kumar-7340062a1/" class="icon" target="_blank"><i class="ri-linkedin-fill"></i></a>
+        </div>
+
+        <div class="footer__details">
+          <p>
+            Passion for technology just getting started. Open to collaborate,
+            code, and create.
+          </p>
+          <p style="font-family: monospace; color: white" align="right">
+            -𝓜𝓻𝓲𝓽𝔂𝓾𝓷𝓳𝓪𝔂
+          </p>
+        </div>
+      </div>
+
+      <!-- Optional contact form you commented out stays omitted -->
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>

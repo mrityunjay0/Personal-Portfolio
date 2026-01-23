@@ -69,6 +69,9 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+/* =========================
+   NAV
+   ========================= */
 nav {
   position: absolute;
   width: 100%;
@@ -88,6 +91,9 @@ nav .nav__logo a span {
   color: var(--secondary-color);
 }
 
+/* =========================
+   HEADER
+   ========================= */
 header {
   height: 100vh;
   background-image: url("assets/tmain.png");
@@ -103,11 +109,13 @@ header {
   align-items: flex-start;
   justify-content: center;
 }
+
 .header__container p {
   color: var(--text-light);
   max-width: 400px;
   margin: 1rem 0;
 }
+
 .header__container p span {
   color: var(--white);
   padding: 0.5rem 1rem;
@@ -115,10 +123,12 @@ header {
   border-radius: 5px;
   margin-right: 1rem;
 }
+
 .header__container h1 {
   font-size: 3rem;
   line-height: 3rem;
 }
+
 .action__btns {
   display: flex;
   align-items: center;
@@ -153,11 +163,22 @@ header {
   background-color: var(--secondary-color-dark);
 }
 
+/* =========================
+   SECTIONS BG
+   ========================= */
 .about,
 .project {
   background-color: var(--text-dark);
 }
 
+.service,
+footer {
+  background-color: var(--primary-color);
+}
+
+/* =========================
+   ABOUT
+   ========================= */
 .about__container {
   display: flex;
   flex-direction: column;
@@ -183,13 +204,10 @@ header {
   text-align: center;
 }
 
-.service,
-footer {
-  background-color: var(--primary-color);
-}
-
-.service__grid,
-.project__grid {
+/* =========================
+   SERVICES (SKILLS)
+   ========================= */
+.service__grid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 1rem;
@@ -228,22 +246,123 @@ footer {
   cursor: pointer;
 }
 
-.project__card {
-  display: grid;
-  place-content: center;
-  border-radius: 5px;
+/* =========================
+   PROJECTS (MARQUEE BANNER)
+   ========================= */
+
+/* Banner container */
+.project__marquee {
+  position: relative;
   overflow: hidden;
-  cursor: pointer;
+  border-radius: 18px;
+  padding: 20px 0;
+  margin-top: 3rem;
 }
 
-.project__card img {
-  transition: scale 0.3s;
+/* Soft fade edges (matches your --text-dark = #0d1319) */
+.project__marquee::before,
+.project__marquee::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 90px;
+  z-index: 2;
+  pointer-events: none;
 }
 
-.project__card:hover img {
-  scale: 1.1;
+.project__marquee::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(13, 19, 25, 1), transparent);
 }
 
+.project__marquee::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(13, 19, 25, 1), transparent);
+}
+
+/* Moving track */
+.project__track {
+  display: flex;
+  gap: 18px;
+  width: max-content;
+  animation: projectMarqueeMove 28s linear infinite;
+}
+
+/* Big project banner cards */
+.project__bannerCard {
+  min-width: 640px;
+  max-width: 720px;
+  height: 320px;
+  border-radius: 22px;
+  overflow: hidden;
+  text-decoration: none;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.06);
+  display: block;
+  transform: translateZ(0);
+}
+
+/* Image */
+.project__bannerCard img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: brightness(0.7);
+  transition: transform 0.3s ease;
+}
+
+.project__bannerCard:hover img {
+  transform: scale(1.06);
+}
+
+/* Nice hover glow (your secondary color) */
+.project__bannerCard:hover {
+  border-color: rgba(255, 78, 5, 0.6);
+  box-shadow: 0 12px 35px rgba(255, 78, 5, 0.12);
+}
+
+/* Text overlay */
+.project__bannerText {
+  position: absolute;
+  left: 18px;
+  right: 18px;
+  bottom: 18px;
+  padding: 16px 18px;
+  border-radius: 18px;
+  background: linear-gradient(
+    to top,
+    rgba(13, 19, 25, 0.92),
+    rgba(13, 19, 25, 0.65)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.project__bannerText h3 {
+  margin: 0 0 6px;
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.project__bannerText p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.86);
+}
+
+/* Animation */
+@keyframes projectMarqueeMove {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); } /* seamless after JS duplicates cards */
+}
+
+/* =========================
+   FOOTER
+   ========================= */
 .footer__container {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -307,8 +426,9 @@ footer {
   width: max-content;
 }
 
-/* Media queries */
-
+/* =========================
+   MEDIA QUERIES
+   ========================= */
 @media (min-width: 640px) {
   .section__title {
     font-size: 2.5rem;
@@ -339,8 +459,7 @@ footer {
     text-align: left;
   }
 
-  .service__grid,
-  .project__grid {
+  .service__grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
   }
@@ -356,38 +475,81 @@ footer {
     line-height: 5rem;
   }
 
-  .service__grid,
-  .project__grid {
+  .service__grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-/* Sliding animation */
-@keyframes slideIn {
-  0% {
-    transform: translateY(100%);
-    opacity: 0;
+/* =========================
+   PROJECT MARQUEE RESPONSIVE
+   ========================= */
+@media (max-width: 520px) {
+  .project__bannerCard {
+    min-width: 340px;
+    height: 240px;
   }
-  100% {
-    transform: translateY(0);
+
+  .project__bannerText h3 {
+    font-size: 1.1rem;
+  }
+
+  .project__bannerText p {
+    font-size: 0.9rem;
+  }
+}
+
+
+/* ===== Marquee Buttons ===== */
+.project__marqueeWrap {
+  position: relative;
+}
+
+/* Hide horizontal scrollbar */
+.project__marquee {
+  scrollbar-width: none;
+}
+.project__marquee::-webkit-scrollbar {
+  display: none;
+}
+
+.marqueeBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.18);
+  background: rgba(13,19,25,0.65);
+  color: var(--white);
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  font-size: 22px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, background 0.2s ease, transform 0.2s ease;
+}
+
+.marqueeBtn:hover {
+  background: rgba(13,19,25,0.85);
+  transform: translateY(-50%) scale(1.05);
+}
+
+.marqueeBtn--left { left: 10px; }
+.marqueeBtn--right { right: 10px; }
+
+/* Show buttons when hovering the marquee area */
+.project__marqueeWrap:hover .marqueeBtn {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Mobile: always visible */
+@media (max-width: 520px) {
+  .marqueeBtn {
     opacity: 1;
+    pointer-events: auto;
   }
-}
-
-.project__card {
-  text-align: center; /* centers caption under image */
-  margin: 10px;
-}
-
-.project__card img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-.caption {
-  text-align: center;
-  margin-top: 8px;
-  font-size: 14px;
-  font-weight: 500;
-  color: #b2a8a8;
 }
